@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCQ-OLx2VpRSNPrY_hyF9E70wns202umwY",
+      authDomain: "database-b26a4.firebaseapp.com",
+      projectId: "database-b26a4",
+      storageBucket: "database-b26a4.appspot.com",
+      messagingSenderId: "454583792504",
+      appId: "1:454583792504:web:901963e1f8d86e11960e8d"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+
+
+</head>
+
+<body>
+  <input placeholder="Enter Todo" type="text" class="inp" id="inp">
+  <button class="btn" onclick="add()">Add Todo</button>
+  <button class="btn" onclick="deleteAll()">Delete All</button>
+  <div id="mainList"></div>
+
+
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
